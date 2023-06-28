@@ -13,4 +13,4 @@ Images:
 timmossholder via https://pixabay.com/photos/fire-log-hot-burn-burning-on-fire-8032745/ \
 masbebet via https://pixabay.com/photos/horses-farm-whitehorse-animal-8026521/ \
 xiSerge via https://pixabay.com/photos/european-honey-bees-bees-insects-8072075/ \
-teddybeetle via https://pixabay.com/photos/beetle-insect-carapace-leaves-8070966/ \
+teddybeetle via https://pixabay.com/photos/beetle-insect-carapace-leaves-8070966/
