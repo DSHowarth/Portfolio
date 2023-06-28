@@ -18,7 +18,7 @@ nav{
     flex: 1;
 }
 
-a{
+li, a{
     text-decoration: none;
     color: white;
     font-size: 30px;
@@ -70,10 +70,5 @@ p{
 
 #contact-info {
     display:flex;
-    background-color:#4a6741;
     align-items: center;
-}
-
-h3{
-    color: white;
 }
