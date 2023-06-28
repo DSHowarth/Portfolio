@@ -70,6 +70,17 @@ p{
     box-shadow: 0px 0px 10px 10px #d4af37;
     box-sizing: border-box;
     margin: 0px 1% 1% 1%;
+    background-color: green;
+    overflow: hidden;
+    position: relative;
+}
+
+h4{
+    position: absolute;
+    bottom: 0;
+    color: black;
+    margin-bottom: 0px;
+    background-color: #d4af37;
 }
 
 #main-project{
@@ -77,6 +88,9 @@ p{
     height: 300px;
 }
 
+.backgroundimg{
+    max-width: 100%;
+}
 .contacts{
     width: 75%;
 }
