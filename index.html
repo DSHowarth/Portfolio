@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Derek Needs a Job</title>
 </head>
+
 <body>
+    <!-- Header with an avatar image, my name, and 3 links that will auto-scroll to the named section -->
     <header>
         <img src="./assets/images/dazzle.png" class="avatar-img">
         <h1>Derek Stanley-Howarth</h1>
@@ -16,7 +18,7 @@
             <li><a href="#contact-info">Contact</a></li>
         </nav>
     </header>
-
+    <!-- About Me section. Contains a 'header'(on the left side) and a short paragraph -->
     <section id="about-me">
         <h2 class="section-title">About Me</h2>
         <p>I couldn't even think of a fun fact when pressed. So this section, like the projects below,
@@ -24,12 +26,15 @@
             a deadline I inflicted on myself by waiting until the last minute.
         </p>
     </section>
-
+    <!-- Projects section, contains a header and 5 projects -->
     <section id="projects">
         <h2 class="section-title">Projects</h2>
+        <!-- Nested Flexbox to make the header take up left side and projects take up right -->
         <div class="project-nest">
+            <!-- each section is <a> so any part of the element can be clicked as a hyperlink -->
             <a class="project" id="main-project" href="https://dshowarth.github.io/Module-1-Challenge/" >
                 <h4>Module 1 Challenge</h4>
+                <!-- image tags are backgrounds for each project element, but left as <img> for formatting -->
                 <img src="./assets/images/image-1.png" class="backgroundimg">
             </a>
             <a class="project" href="https://www.google.com/">
@@ -50,11 +55,14 @@
             </a>
         </div>
     </section>
-
+    <!-- Contact info Section. Contains a header and several links -->
     <section id="contact-info">
         <h2 class="section-title">Contact Me</h2>
         <nav class="contacts">
-            <li>555-555-1234</li>
+            <!-- Phone number is followed by a hidden message when the user tries to click on it -->
+            <li id="phone">555-555-1234</li>
+            <span class="tooltip">That's not how you use a phone number!</span>
+            <!-- TODO Replace meaningless links with meaningful ones before using as an actual portfolio -->
             <li> <a href="https://www.zombo.com">Zombo</a></li>
             <li> <a href="https://taskmastersupermaxplus.vhx.tv">Taskmaster VODs</a></li>
         </nav>

@@ -2,10 +2,9 @@
 
 ## Description
 A site with links to projects I have created over the course of a UCB bootcamp. As this was initially created during the second week, links will be updated to reflect the portfolio as it grows. 
-![Screenshot of site](image.png)
 
 ## Usage
-Visit url_PLACEHOLDER to view the site. 
+Visit https://dshowarth.github.io/Portfolio/ to view the site. 
 
 ## Credits
 

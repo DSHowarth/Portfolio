@@ -1,9 +1,11 @@
+/* setting document wide formatting. Min-width is to help the page not implode at very low screen sizes */
 body {
     margin: 0%;
     background-color: grey;
     min-width:750px;
 }
 
+/* Header has different background and formatting to rest of doc. */
 header{
     height:75px;
     display:flex;
@@ -19,6 +21,8 @@ h1{
     padding: 15px;
 }
 
+/* Formatting for both lists in header and contact info. They won't change color when clicked, 
+and display in a line with center-aligned text*/
 li, a{
     display:inline-block;
     text-decoration: underline;
@@ -28,22 +32,27 @@ li, a{
     text-align: center;
 }
 
+/* formatting for the avatar. It gets cut off by the screen but I kind of like the aesthetic */
 .avatar-img {
     height:100px;
     border-radius:50px;
     border:5px solid yellow;
 }
 
+/* Creating main bodies into flex boxes so the section headers keep their portion of the screen */
 section{
     display:flex;
     align-items: stretch;
     margin-bottom: 30px;
 }
 
+/* visually separating sections from header */
 #about-me{
     margin-top: 20px;
 }
 
+/* defining formatting for the section headers. They will always try to take up 25% of the screen,
+and have a thin border visually separating them from the section content */
 .section-title{
     width: 25%;
     text-align: right;
@@ -53,29 +62,32 @@ section{
     font-size: 50px;
 }
 
+/* making paragraph text readable on the grey background, and remain a consistent width*/
 p{
     width: 75%;
     color: white;
 }
 
+/* creating nested flex container within section to organize projects without affecting section header.
+Wrapped so the elements stack as intended*/
 .project-nest{
     display: flex;
     width: 75%;
     flex-wrap: wrap;
 }
 
+/* Formatting for project links. Contains a brightness filter for hover functionality. */
 .project{
     width: 39%;
-    height: auto;
     box-shadow: 0px 0px 10px 10px #d4af37;
     box-sizing: border-box;
     margin: 0px 1% 1% 1%;
     background-color: green;
-    overflow: hidden;
     position: relative;
-    filter: brightness(50%)
+    filter: brightness(75%)
 }
 
+/* Positioning project titles so they're always visible over the image */
 h4{
     position: absolute;
     bottom: 0;
@@ -84,20 +96,40 @@ h4{
     background-color: #d4af37;
 }
 
+/* setting the first project on the page to a more dominating size */
 #main-project{
     width: 80%;
 }
 
+/* formatting for images to act as backgrounds for links */
 .backgroundimg{
     width: 100%;
     height: 100%;
     object-fit: fill;
 
 }
+
+/* Defining the width of the section headers as 25% doesn't seem to be enough, you also have to
+define the content section as 75% for the round 100. */
 .contacts{
     width: 75%;
 }
 
+/* hiding secret message on phone number */
+.tooltip{
+    display:none;
+    font-size: medium;
+    bottom: 50px;
+    text-decoration-style: none;
+}
+
+/* restores brightness when hovering over a specific project */
 a.project:hover{
     filter: brightness(100%);
+}
+
+/* shows secret message when phone number is clicked. I'm hoping I'll find a way better way
+to do this via JavaScript */
+li#phone:active span.tooltip{
+    display:contents;
 }
